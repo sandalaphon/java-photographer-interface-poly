@@ -14,11 +14,13 @@ public class Photographer {
       return this.name;
     }
 
+    public void addCamera(Camera nikkon){
+      cameras.add(nikkon);
 
-
-    // public String printDetails(){
-    //   return "Details";
-    // }
+    }
   
-  
+    public int countCameras(){
+      return cameras.size();
+    }
+    
 }
