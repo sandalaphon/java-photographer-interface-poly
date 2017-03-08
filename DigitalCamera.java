@@ -10,12 +10,23 @@ public DigitalCamera(int price,String make, String model){
   this.model = model;
 }
 
+public int getPrice(){
+  return this.price;
+}
 
+public String getmake(){
+  return this.make;
+}
 
-
+public String getmodel(){
+  return this.model;
+}
 
   public String printDetails(){
-
-    return "Details";
+    String priceAsString = Integer.toString(this.price);
+    // System.out.println("£" +priceAsString + this.make + this.model);
+    return "£" +priceAsString +" and was make by "+ this.make + " it is model: " +this.model;
   }
+
+
 }

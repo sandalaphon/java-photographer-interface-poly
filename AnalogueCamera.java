@@ -11,7 +11,10 @@ public class AnalogueCamera implements Camera{
   }
 
   public String printDetails(){
-    return "Details";
+    String priceAsString = Integer.toString(this.price);
+    // System.out.println("£" +priceAsString + this.make + this.model);
+   return "£" +priceAsString +" and was make by "+ this.make + " it is model: " +this.model;
+    // return "£" +priceAsString + this.make + this.model;
   }
 
 }
